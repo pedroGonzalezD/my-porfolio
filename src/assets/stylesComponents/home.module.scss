@@ -1,0 +1,77 @@
+@import "../styles/abstrats/var.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+
+  .imageContainer {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .textContainer {
+    margin-top: 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 1.5rem;
+      line-height: 1.2;
+
+      .name {
+        color: $primary;
+        font-weight: 600
+      }
+
+      .frontend {
+        font-weight: bold;
+      }
+
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $neutral;
+      font-weight: 400;
+    }
+
+    .socials {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+
+      .socialIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        border: 2px solid $primary;
+        padding: 12px;
+        border-radius: .5rem;
+
+        img{
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s  infinite;
+}
+
+
+@keyframes blink {
+  50%{
+   opacity: 0;
+  }
+ }

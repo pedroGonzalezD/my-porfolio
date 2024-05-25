@@ -1,0 +1,64 @@
+@import "../styles/abstrats/var.scss";
+
+.section{
+  margin-top: 2rem;
+
+  h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $primary;
+  }
+}
+
+.option{
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  button{
+    background-color: hsl(0%, 0%, 70%);
+    font-weight: 700;
+    color: hsl(0%, 0%, 10%);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 1px 2px 1px 1px hsla(0%, 0%, 10%, .5), inset 0 2px 0 0 hsla(210%, 50%, 80%, .5);
+
+  }
+
+  .active{
+    background-color: $primary;
+    color: $white;
+    box-shadow: 1px 2px 1px 1px hsla(0%, 0%, 10%, .7), inset 0 2px 0 0 hsla(210%, 100%, 80%, .5);
+  }
+}
+
+.skills{
+  
+  ul{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(160px, 1fr));
+    justify-items: center;
+    row-gap: 1.5rem;
+
+    li{
+      border: 4px solid $primary;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      color: $neutral;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 8px;
+
+      img{
+        width: 4rem;
+      }
+    };
+  }
+}

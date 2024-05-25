@@ -1,0 +1,104 @@
+@import "../styles/abstrats/var.scss";
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: $white;
+  color: $neutral;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $primary;
+    margin-bottom: 20px;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid $neutral;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: $primary;
+      color: $white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
+    }
+  }
+
+  .emailContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+    .email {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    .copyButton {
+      padding: 5px 10px;
+      background-color: $white;
+      color: $primary;
+      border: 2px solid $primary;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($white, 10%);
+      }
+    }
+  }
+
+  .copyMessage {
+    margin-top: 10px;
+    color: green;
+    font-size: 1rem;
+  }
+
+  .formMessage {
+    margin-top: 10px;
+    color: green;
+    font-size: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .socialIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      border: 2px solid $primary;
+      padding: 12px;
+      border-radius: .5rem;
+
+      img{
+        width: 24px;
+      }
+    }
+  }
+}

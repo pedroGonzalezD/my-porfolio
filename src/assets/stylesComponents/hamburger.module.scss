@@ -1,0 +1,61 @@
+@import "../styles/abstrats/var.scss";
+
+.burger{
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  z-index: 999;
+
+  span{
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  }
+
+  span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-50%);
+  }
+}
+
+.open{
+  span:nth-of-type(1) {
+    top: 0;
+    left: 5px;
+    transform: rotate(405deg);
+    background-color: $red;
+  }
+
+  span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  span:nth-of-type(3) {
+    top: 28px;
+    left: 5px;
+    transform: rotate(-405deg);
+    background-color: $red;
+  }
+}
