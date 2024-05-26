@@ -1,22 +1,27 @@
 @import "../styles/abstrats/var.scss";
 
 .header {
-  display: flex;
   position: fixed;
   z-index: 995;
   bottom: 0;
   left: 0;
   right: 0;
-  justify-content: space-between;
   padding: 24px;
-  align-items: center;
   background-color: $primary;
+  
+  
+ 
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
 
   .a {
     text-decoration: none;
 
-    h1 {
-      font-size: 1rem;
+    h4 {
       font-weight: bolder;
       color: $white;
     }
@@ -77,14 +82,65 @@
     &:hover{
       color: lighten($white, 20%);
     }
-    &:active {
-      transform: scale(1.2);
-      border-radius: 1rem;
-    }
   }
 }
 
 .open {
   transform: translate(0, 0);
   visibility: visible;
+}
+
+
+@media (min-width:600px) {
+
+
+}
+
+@media (min-width: 1024px) {
+  .header{
+    top: 0;
+    bottom: auto;
+
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    .nav{
+      all: unset;
+      
+      ul{
+        all: unset;
+        display: flex;
+        gap: 5px;
+
+        li{
+          transition: transform 0.2s;
+
+          &:active{
+            transform: scale(0.8);
+          }
+        }
+
+        a{
+          all: unset;
+          color: $white;
+          cursor: pointer;
+          padding: 0.5rem 1rem;
+          border-radius: 12px;
+
+          &:hover{
+            background-color: $white;
+            color: $primary;
+          }
+
+        }
+      }
+    }
+
+    .overlay{
+      display: none;
+    }
+  }
 }

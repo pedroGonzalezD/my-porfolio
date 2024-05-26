@@ -11,10 +11,11 @@ const Header = () =>{
 
   return(
     <header className={style.header}>
+      <div className={style.container}>
         <a href="#home" className={style.a}>
-          <h1>
+          <h4 id="h2">
             Pedro González
-          </h1>
+          </h4>
         </a>
         <Hamburger onClick={toggleMenu} isOpen={isOpen}/>
         <div className={`${style.overlay} ${isOpen ? style.show : ''}`} onClick={toggleMenu}></div>
@@ -27,6 +28,7 @@ const Header = () =>{
           <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </ul>
         </nav>
+        </div>
     </header>
   )
 }

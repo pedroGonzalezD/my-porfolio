@@ -20,7 +20,6 @@
     text-align: center;
 
     h1 {
-      font-size: 1.5rem;
       line-height: 1.2;
 
       .name {
@@ -36,7 +35,6 @@
 
     p {
       margin-bottom: 0.5rem;
-      font-size: 1rem;
       line-height: 1.5;
       color: $neutral;
       font-weight: 400;
@@ -44,6 +42,7 @@
 
     .socials {
       display: flex;
+      justify-content: center;
       gap: 1rem;
       margin-top: 2rem;
 
@@ -75,3 +74,9 @@
    opacity: 0;
   }
  }
+
+ @media (min-width:1024px) {
+  .home{
+    scroll-margin-top: 5rem ;
+  }
+}

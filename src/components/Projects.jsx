@@ -24,6 +24,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className={styles.projects} id='projects'>
+      <div className={styles.container}>
       <h2>My <span className={styles.highlight}>Projects</span></h2>
       {projects.map((project) => (
         <div key={project.id} className={styles.project}>
@@ -36,6 +37,7 @@ const Projects = () => {
           </div>
         </div>
       ))}
+      </div>
     </section>
   );
 };
