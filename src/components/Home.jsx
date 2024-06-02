@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div className={styles.textContainer}>
         <h1>
-          Hello I&apos;am <span className={styles.name}>Pedro González.</span>
+          Hello! I&apos;am <span className={styles.name}>Pedro González.</span>
           <br />
           <span className={styles.frontend}>Full Stack</span> Developer <br />
         </h1>

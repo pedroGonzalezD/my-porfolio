@@ -2,9 +2,6 @@ import style from "../assets/stylesComponents/about.module.scss"
 
 const About = () => (
   <section id="about" className={style.section}>
-    <div>
-      <img src="" alt="Pedro Gonzalez" />
-    </div>
     <h2>About Me</h2>
     <div className={style.description}>
     <p>
